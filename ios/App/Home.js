@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#8e44ad',
     },
     welcome: {
         fontSize: 20,
@@ -45,8 +45,10 @@ const styles = StyleSheet.create({
     },
     button: {
         margin: 10,
-        backgroundColor: "blue",
+        backgroundColor: "#9b59b6",
         padding: 10,
+        width:200,
+        borderRadius: 20,
         alignItems: "center",
         justifyContent: "center",
         alignSelf: "center",

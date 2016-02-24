@@ -30,7 +30,6 @@ var LC = React.createClass({
     },
     render: function () {
         const me = this
-
         return (
             <View style={styles.container}>
                 <View
@@ -41,6 +40,7 @@ var LC = React.createClass({
                         <LineChart height={me.state.height}
                                    width={me.state.width}
                                    onMove={me.onMove}
+                                   stroked={true}
                                    text_color={pallette.white}
                                    data={me.state.data}/>
                     }

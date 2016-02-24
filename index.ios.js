@@ -18,7 +18,8 @@ var BlockChart = require('./ios/App/BlockGraph/BG')
 class charts extends Component {
     render() {
         return (
-                <Router>
+                <Router titleStyle={styles.titleStyle}
+                        navigationBarStyle={styles.navigationBar}>
                     <Schema name="modal"
                             sceneConfig={Navigator.SceneConfigs.FloatFromBottom}/>
                     <Schema name="default"
@@ -30,10 +31,10 @@ class charts extends Component {
                            component={Home}
                            initial={true}
                            title="Home"/>
-                    <Route name="Line" schema={"default"}
+                    <Route name="Line" schema={"modal"}
                            component={LineChart}
                            title="Line Chart"/>
-                    <Route name="Block" schema={"default"}
+                    <Route name="Block" schema={"modal"}
                            component={BlockChart}
                            title="Block Chart"/>
 
@@ -58,6 +59,13 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#333333',
         marginBottom: 5,
+    },
+    navigationBar:{
+        backgroundColor: "#FFFFFF",
+
+    },
+    titleStyle: {
+        color: "#9b59b6",
     },
 });
 
